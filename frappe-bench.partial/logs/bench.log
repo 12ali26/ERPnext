@@ -1,0 +1,12 @@
+2026-05-16 16:22:28,512 DEBUG cd frappe-bench && uv venv env --seed --python python3
+2026-05-16 16:22:29,573 ERROR There was a problem while creating frappe-bench
+2026-05-16 16:22:29,577 WARNING /usr/local/py-utils/bin/bench init frappe-bench --frappe-branch version-16 --python python3 --skip-assets executed with exit code 1
+2026-05-16 16:23:00,212 DEBUG cd frappe-bench && uv venv env --seed --python python3
+2026-05-16 16:23:02,213 ERROR There was a problem while creating frappe-bench
+2026-05-16 16:23:02,214 WARNING /usr/local/py-utils/bin/bench init frappe-bench --ignore-exist --frappe-branch version-16 --python python3 --skip-assets executed with exit code 1
+2026-05-16 16:24:06,204 LOG Getting frappe
+2026-05-16 16:24:06,205 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-16 --depth 1 --origin upstream
+2026-05-16 16:24:09,781 LOG Installing frappe
+2026-05-16 16:24:09,814 DEBUG cd /workspaces/ERPnext/frappe-bench && uv pip install --quiet --upgrade -e /workspaces/ERPnext/frappe-bench/apps/frappe  --python /workspaces/ERPnext/frappe-bench/env/bin/python
+2026-05-16 16:24:16,051 WARNING cd /workspaces/ERPnext/frappe-bench && uv pip install --quiet --upgrade -e /workspaces/ERPnext/frappe-bench/apps/frappe  --python /workspaces/ERPnext/frappe-bench/env/bin/python executed with exit code 1
+2026-05-16 16:24:16,054 WARNING /usr/local/py-utils/bin/bench init frappe-bench --ignore-exist --frappe-branch version-16 --python python3 --skip-assets executed with exit code 167
