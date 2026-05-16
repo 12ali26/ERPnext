@@ -69,3 +69,17 @@
 2026-05-16 17:01:38,036 INFO /usr/local/py-utils/bin/bench --site business.localhost execute frappe.client.get_list --kwargs {'doctype':'UOM','fields':['name'],'limit_page_length':100}
 2026-05-16 17:01:38,409 INFO /usr/local/py-utils/bin/bench --site business.localhost execute frappe.client.get_list --kwargs {'doctype':'Company','fields':['name','abbr','default_warehouse'],'limit_page_length':20}
 2026-05-16 17:01:38,994 INFO /usr/local/py-utils/bin/bench --site business.localhost execute frappe.client.get_value --args ['Selling Settings','Selling Settings',['cust_master_name']]
+2026-05-16 17:02:53,481 INFO /usr/local/py-utils/bin/bench --site business.localhost execute business_customizations.demo_seed.seed_tallspan_trial
+2026-05-16 17:03:14,063 INFO /usr/local/py-utils/bin/bench --site business.localhost execute business_customizations.demo_seed.seed_tallspan_trial
+2026-05-16 17:03:41,122 INFO /usr/local/py-utils/bin/bench --site business.localhost execute business_customizations.demo_seed.seed_tallspan_trial
+2026-05-16 17:04:00,161 INFO /usr/local/py-utils/bin/bench --site business.localhost execute frappe.client.get_count --args ['Customer']
+2026-05-16 17:04:00,738 INFO /usr/local/py-utils/bin/bench --site business.localhost execute frappe.client.get_count --args ['Sales Order']
+2026-05-16 17:04:00,771 INFO /usr/local/py-utils/bin/bench --site business.localhost execute frappe.client.get_count --args ['Item']
+2026-05-16 17:04:01,528 INFO /usr/local/py-utils/bin/bench --site business.localhost execute frappe.client.get_list --kwargs {'doctype':'Sales Order','fields':['name','customer','company','grand_total'],'limit_page_length':5}
+2026-05-16 17:04:01,604 INFO /usr/local/py-utils/bin/bench --site business.localhost execute frappe.client.get_count --args ['Opportunity']
+2026-05-16 17:31:25,756 INFO /usr/local/py-utils/bin/bench --site business.localhost execute frappe.client.get_list --kwargs {'doctype':'Customer','fields':['name','customer_name','territory','customer_group'],'filters':[['name','like','%Nyali%']],'limit_page_length':20}
+2026-05-16 17:31:26,149 INFO /usr/local/py-utils/bin/bench --site business.localhost execute frappe.client.get_list --kwargs {'doctype':'Item','fields':['name','item_name','item_group','disabled'],'filters':[['name','like','%PEPSI%']],'limit_page_length':20}
+2026-05-16 17:31:26,270 INFO /usr/local/py-utils/bin/bench --site business.localhost execute frappe.client.get_list --kwargs {'doctype':'Sales Order','fields':['name','customer','company','docstatus'],'filters':[['po_no','like','TALLSPAN%']],'limit_page_length':20}
+2026-05-16 17:31:26,517 INFO /usr/local/py-utils/bin/bench --site business.localhost execute frappe.client.get_list --kwargs {'doctype':'Warehouse','fields':['name','company','disabled'],'filters':[['name','like','%Tallspan%']],'limit_page_length':20}
+2026-05-16 17:31:42,508 INFO /usr/local/py-utils/bin/bench --site business.localhost execute frappe.defaults.get_global_default --args ['company']
+2026-05-16 17:31:42,541 INFO /usr/local/py-utils/bin/bench --site business.localhost execute frappe.client.get_list --kwargs {'doctype':'User Permission','fields':['name','user','allow','for_value','applicable_for'],'limit_page_length':50}

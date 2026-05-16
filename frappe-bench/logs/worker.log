@@ -516,3 +516,12 @@
 2026-05-16 16:50:25,129 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Property Setter', 'name': 'Stock Entry-scan_barcode-hidden'}, method='frappe.model.delete_doc.delete_dynamic_links', site='business.localhost', user='Administrator') job in 0:00:00.065958s on worker 7a88edaa7fe84359ad70fbfe8f1db40f
 2026-05-16 16:50:25,129 workspaces-ERPnext-frappe-bench:default: Job OK (business.localhost||ac8a5ec7-7393-4dd3-8273-97a24d4bb721)
 2026-05-16 16:50:25,129 Result is kept for 600 seconds
+2026-05-16 17:03:55,234 Worker 7a88edaa7fe84359ad70fbfe8f1db40f: cleaning registries for queue: workspaces-ERPnext-frappe-bench:short
+2026-05-16 17:03:55,251 Worker 7a88edaa7fe84359ad70fbfe8f1db40f: cleaning registries for queue: workspaces-ERPnext-frappe-bench:default
+2026-05-16 17:03:55,277 Worker 7a88edaa7fe84359ad70fbfe8f1db40f: cleaning registries for queue: workspaces-ERPnext-frappe-bench:long
+2026-05-16 17:17:25,422 Worker 7a88edaa7fe84359ad70fbfe8f1db40f: cleaning registries for queue: workspaces-ERPnext-frappe-bench:short
+2026-05-16 17:17:25,423 Worker 7a88edaa7fe84359ad70fbfe8f1db40f: cleaning registries for queue: workspaces-ERPnext-frappe-bench:default
+2026-05-16 17:17:25,425 Worker 7a88edaa7fe84359ad70fbfe8f1db40f: cleaning registries for queue: workspaces-ERPnext-frappe-bench:long
+2026-05-16 17:30:55,482 Worker 7a88edaa7fe84359ad70fbfe8f1db40f: cleaning registries for queue: workspaces-ERPnext-frappe-bench:short
+2026-05-16 17:30:55,484 Worker 7a88edaa7fe84359ad70fbfe8f1db40f: cleaning registries for queue: workspaces-ERPnext-frappe-bench:default
+2026-05-16 17:30:55,485 Worker 7a88edaa7fe84359ad70fbfe8f1db40f: cleaning registries for queue: workspaces-ERPnext-frappe-bench:long
