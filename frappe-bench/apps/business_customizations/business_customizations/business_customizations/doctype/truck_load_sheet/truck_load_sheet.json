@@ -26,6 +26,7 @@
   "totals_section",
   "total_items",
   "total_loaded_qty",
+  "stock_entry",
   "amended_from"
  ],
  "fields": [
@@ -152,6 +153,14 @@
    "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Total Loaded Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "label": "Stock Entry",
+   "no_copy": 1,
+   "options": "Stock Entry",
    "read_only": 1
   },
   {

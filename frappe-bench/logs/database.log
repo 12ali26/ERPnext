@@ -2795,3 +2795,5 @@ index parent(parent))
 			ROW_FORMAT=DYNAMIC
 			CHARACTER SET=utf8mb4
 			COLLATE=utf8mb4_unicode_ci
+2026-05-16 17:52:57,582 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTruck Load Sheet` ADD COLUMN `stock_entry` varchar(140)
