@@ -246,3 +246,9 @@
   child_pid = os.fork()
 /workspaces/ERPnext/frappe-bench/env/lib/python3.14/site-packages/rq/worker.py:1602: DeprecationWarning: This process (pid=58858) is multi-threaded, use of fork() may lead to deadlocks in the child.
   child_pid = os.fork()
+/workspaces/ERPnext/frappe-bench/env/lib/python3.14/site-packages/rq/worker.py:1602: DeprecationWarning: This process (pid=58858) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/workspaces/ERPnext/frappe-bench/env/lib/python3.14/site-packages/whoosh/codec/whoosh3.py:1116: SyntaxWarning: "is" with 'int' literal. Did you mean "=="?
+  elif fixedsize is 0:
+/workspaces/ERPnext/frappe-bench/env/lib/python3.14/site-packages/rq/worker.py:1602: DeprecationWarning: This process (pid=58858) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()

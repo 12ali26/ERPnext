@@ -2737,3 +2737,61 @@ ALTER TABLE `tabEmail Account` ADD COLUMN `company` varchar(140)
 ALTER TABLE `tabAddress` ADD COLUMN `tax_category` varchar(140), ADD COLUMN `is_your_company_address` tinyint(4) NOT NULL DEFAULT 0
 2026-05-16 16:36:01,042 WARNING database DDL Query made to DB:
 ALTER TABLE `tabContact` ADD COLUMN `is_billing_contact` tinyint(4) NOT NULL DEFAULT 0
+2026-05-16 17:45:00,493 WARNING database DDL Query made to DB:
+create table `tabTruck Load Sheet` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`naming_series` varchar(140),
+`company` varchar(140),
+`posting_date` date,
+`status` varchar(140) DEFAULT 'Draft',
+`route_name` varchar(140),
+`vehicle_id` varchar(140),
+`sales_representative` varchar(140),
+`driver_name` varchar(140),
+`source_warehouse` varchar(140),
+`target_truck_warehouse` varchar(140),
+`planned_departure` datetime(6),
+`notes` text,
+`total_items` int(11) NOT NULL DEFAULT 0,
+`total_loaded_qty` decimal(21,9) NOT NULL DEFAULT 0.0,
+`amended_from` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-05-16 17:45:00,694 WARNING database DDL Query made to DB:
+create table `tabTruck Load Sheet Item` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`item_code` varchar(140),
+`item_name` varchar(140),
+`uom` varchar(140),
+`loaded_qty` decimal(21,9) NOT NULL DEFAULT 0.0,
+`batch_no` varchar(140),
+`expiry_date` date,
+`remarks` text,
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
