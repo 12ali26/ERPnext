@@ -1,0 +1,14 @@
+# Local Frappe/ERPNext runtime
+frappe-bench/
+frappe-bench.partial/
+erpnext/
+
+# Python/runtime artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local env/secrets
+.env
+*.local
+
